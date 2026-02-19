@@ -11,7 +11,7 @@ Automated installation script for [ezXSS](https://github.com/ssl/ezXSS) on a fre
 ## Quick Start
 
 ```bash
-git clone https://github.com/<your-username>/ezXSSetup.git
+git clone https://github.com/nasmandev/ezXSSetup.git
 cd ezXSSetup
 sudo bash install.sh
 ```
