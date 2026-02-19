@@ -94,11 +94,11 @@ cd "$INSTALL_DIR"
 log "Creating .env configuration..."
 cp .env.example .env
 
-sed -i "s/^dbPassword=.*/dbPassword=${DB_PASSWORD}/" .env
-sed -i "s/^domain=.*/domain=${DOMAIN}/" .env
-sed -i "s/^autoInstallCertificate=.*/autoInstallCertificate=${AUTO_SSL}/" .env
-sed -i "s/^httpmode=.*/httpmode=${HTTP_MODE}/" .env
-sed -i "s/^useMailAlerts=.*/useMailAlerts=${MAIL_ALERTS}/" .env
+sed -i "s|^dbPassword=.*|dbPassword=${DB_PASSWORD}|" .env
+sed -i "s|^domain=.*|domain=${DOMAIN}|" .env
+sed -i "s|^autoInstallCertificate=.*|autoInstallCertificate=${AUTO_SSL}|" .env
+sed -i "s|^httpmode=.*|httpmode=${HTTP_MODE}|" .env
+sed -i "s|^useMailAlerts=.*|useMailAlerts=${MAIL_ALERTS}|" .env
 
 # --- Start containers -------------------------------------------------
 
